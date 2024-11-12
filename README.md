@@ -81,8 +81,8 @@ int main(){
 ```
 ## OUTPUT
 
-![image](https://github.com/user-attachments/assets/c3971f19-82d7-42bc-9ce2-131fd28306a5)
 <img src="https://github.com/user-attachments/assets/c3971f19-82d7-42bc-9ce2-131fd28306a5" width="400px">
+
 
 # RESULT:
 The programs are executed successfully.
