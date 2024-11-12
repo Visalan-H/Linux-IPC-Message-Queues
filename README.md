@@ -57,14 +57,12 @@ int main()
 #include <stdio.h>
 #include <sys/ipc.h>
 #include <sys/msg.h>
-
 // structure for message queue
 struct mesg_buffer {
 	long mesg_type;
 	char mesg_text[100];
 } message;
-int main()
-{
+int main(){
 	key_t key;
 	int msgid;
     	// ftok to generate unique key
@@ -75,9 +73,7 @@ int main()
 	// msgrcv to receive message
 	msgrcv(msgid, &message, sizeof(message), 1, 0);
 	// display the message
-	printf("Data Received is : %s \n",
-			message.mesg_text);
-
+	printf("Data Received is : %s \n",message.mesg_text);
 	// to destroy the message queue
 	msgctl(msgid, IPC_RMID, NULL);
 	return 0;
@@ -86,6 +82,7 @@ int main()
 ## OUTPUT
 
 ![image](https://github.com/user-attachments/assets/c3971f19-82d7-42bc-9ce2-131fd28306a5)
+<img src="https://github.com/user-attachments/assets/c3971f19-82d7-42bc-9ce2-131fd28306a5" width="400px">
 
 # RESULT:
 The programs are executed successfully.
